@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: department-service
+  profiles:
+    include: service-clients
+  cloud:
+    config:
+      uri: http://localhost:8088
+

@@ -1,0 +1,20 @@
+server:
+  port: 8090
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8061/eureka/
+
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+      default: true
+
+#logging:
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"

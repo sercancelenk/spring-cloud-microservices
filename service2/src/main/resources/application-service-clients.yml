@@ -1,0 +1,13 @@
+webclient:
+  commons:
+    connectTimeoutMillis: 30000
+    socketReadTimeoutmillis: 30000
+    socketWriteTimeoutMillis: 30000
+    soKeepAlive: true
+  services:
+    employee-service:
+      secure: true
+      baseUrl: http://employee-service
+    auth-service:
+      secure: false
+      baseUrl: http://auth-service
