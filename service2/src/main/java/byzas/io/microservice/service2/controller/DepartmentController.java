@@ -22,8 +22,18 @@ public class DepartmentController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DepartmentController.class);
 
-    @Autowired
+    /*@Autowired
     DepartmentRepository repository;
+    */
+    
+    private DepartmentRepository repository;
+    
+    @Autowired 
+    public DepartmentController(DepartmentRepository repository){
+        
+        this.repository = repository;
+    }
+    
 
 
     @PostMapping("/")
